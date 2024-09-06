@@ -1,0 +1,161 @@
+/* General Reset and Setup */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;  /* Remove default margin */
+    font-family: Arial, sans-serif;  /* Set a default font */
+    background-color: lightsalmon;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* Full viewport height */
+}
+
+/* Header */
+#center-title {
+    display: flex;  /* Use Flexbox to arrange header and nav */
+    justify-content: space-between;  /* Space between header and nav */
+    align-items: center;  /* Center items vertically */
+    background-color: rgba(0, 0, 255, 0.619);  /* Background color for the header */
+    color: white;  /* Text color */
+    padding: 10px 40px;  /* Add padding around the container */
+    border-bottom: 2px solid #ccc;  /* Optional border at the bottom */
+}
+
+/* Title Styling */
+.bordered-title {
+    margin: 0;  /* Remove default margin */
+    padding: 10px 20px;  /* Add padding inside the border */
+    border: 2px solid #000;  /* Add a solid black border */
+    background-color: #fff;  /* Background color for the title */
+    color: #000;  /* Set text color */
+    border-radius: 5px;  /* Optional rounded corners */
+}
+
+/* Navigation Bar */
+.nav-bar ul {
+    list-style: none;  /* Remove list bullets */
+    padding: 0;  /* Remove padding */
+    margin: 0;  /* Remove margin */
+    display: flex;  /* Display list items in a row */
+    gap: 20px;  /* Space between nav items */
+}
+
+.nav-bar li {
+    display: inline-block;  /* Inline block for each nav item */
+}
+
+.nav-bar a {
+    text-decoration: none;  /* Remove underline from links */
+    color: #ffffff;  /* Set link color */
+    padding: 10px 15px;  /* Padding around links */
+    border: 2px solid transparent;  /* Transparent border for hover effect */
+    transition: all 0.3s ease;  /* Smooth transition for hover effect */
+    border-radius: 5px;  /* Rounded corners for links */
+}
+
+.nav-bar a:hover {
+    border-color: #000;  /* Change border color on hover */
+    background-color: #fff;  /* Background color change on hover */
+    color: #000;
+}
+
+/* Main Content Area */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /* Two equal columns */
+    flex: 1;  /* Allow the container to grow */
+}
+
+/* Left and Right Half */
+.left-half, .right-half {
+    display: flex;
+    align-items: flex-start;  /* Align content to the start */
+    justify-content: left;  /* Align content to the left */
+    padding: 20px;
+}
+
+/* Grid for Image and Text */
+.grid-container {
+    display: grid;
+    grid-template-columns: 100px auto;  /* Image column and text column */
+    gap: 10px;  /* Space between image and text */
+    max-width: 80%;  /* Limit width of the grid container */
+}
+
+/* Paragraph Styling */
+p {
+    border: 2px solid #000;  /* Black border, 2 pixels wide */
+    padding: 10px;  /* Space between the border and text */
+    margin: 10px 0;  /* Space above and below each paragraph */
+    border-radius: 5px;  /* Optional: Rounded corners */
+    background-color: #f9f9f9;  /* Optional: Background color for better visibility */
+}
+
+/* Image Styling */
+.image {
+    width: 100px;  /* Set the width */
+    height: 100px;  /* Set the height */
+    border-radius: 50%;  /* Make the image circular */
+    object-fit: cover;  /* Ensure the image covers the circle area */
+    display: block;  /* Remove default spacing */
+}
+
+/* Text Styling */
+.text {
+    margin-top: 0px;
+}
+
+/* Heading and Text Styling */
+.text h2 {
+    margin-top: 0;  /* Remove top margin for heading */
+}
+h2, p {
+    margin: 0;  /* Remove default margin from heading and paragraph */
+}
+.text p {
+    margin-bottom: 0px;  /* Remove bottom margin for paragraph */
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 255, 0.619);;  /* Footer background color */
+    color: white;  /* Footer text color */
+    text-align: center;  /* Center align text */
+    padding: 10px;  /* Padding inside the footer */
+    margin-top: auto;  /* Push footer to the bottom */
+
+    
+}
+
+
+.footer-nav {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Display list items in a row */
+    justify-content: center; /* Center the list items */
+    gap: 20px; /* Add space between items */
+}
+.footer-nav li {
+    display: inline-block; /* Inline block for each nav item */
+}
+
+.footer-nav li:not(:last-child) {
+    border-right: 1px solid #fff; /* Add divider between items */
+    padding-right: 15px; /* Add some padding to the right */
+}
+
+.footer-nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Link color */
+    padding: 5px 10px; /* Padding around links */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.footer-nav a:hover {
+    color: #ddd; /* Change color on hover */
+}
